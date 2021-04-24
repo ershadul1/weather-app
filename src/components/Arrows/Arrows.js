@@ -2,6 +2,8 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import LeftArrow from './left.svg';
+import RightArrow from './right.svg';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -14,16 +16,10 @@ const useStyles = makeStyles(() => ({
   disabled: {
     display: 'none',
   },
-  left: {
-    clipPath: 'polygon(0% 50%, 40% 0%, 40% 25%, 100% 25%, 100% 75%, 40% 75%, 40% 100%)',
-    width: '100px',
-    height: '50px',
-    margin: '1vw',
-  },
-  right: {
-    clipPath: 'polygon(0% 25%, 60% 25%, 60% 0%, 100% 50%, 60% 100%, 60% 75%, 0% 75%)',
-    width: '100px',
-    height: '50px',
+  arrow: {
+    display: 'block',
+    width: '120px',
+    height: '60px',
     margin: '1vw',
   },
 }));
@@ -33,8 +29,12 @@ export default function Arrows() {
 
   return (
     <div className={classes.root}>
-      <Button className={classes.left} variant="contained" color="primary" />
-      <Button className={classes.right} variant="contained" color="primary" />
+      <Button>
+        <img src={LeftArrow} alt="left-arrow" className={classes.arrow} />
+      </Button>
+      <Button>
+        <img src={RightArrow} alt="right-arrow" className={classes.arrow} />
+      </Button>
     </div>
   );
 }
