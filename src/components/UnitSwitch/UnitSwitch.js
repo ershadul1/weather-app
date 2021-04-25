@@ -20,7 +20,7 @@ const GlobalCss = withStyles({
 const useStyles = makeStyles(() => ({
   root: {
     width: '100%',
-    margin: '5vh 0',
+    margin: '3vh 0',
   },
 }));
 
