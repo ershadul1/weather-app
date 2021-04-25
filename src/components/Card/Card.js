@@ -21,9 +21,6 @@ export default function SimpleCard({
   cardIndex, data, currentCard, unit,
 }) {
   const classes = useStyles();
-  console.log(`key = ${cardIndex}`);
-  console.log(data);
-  console.log(currentCard);
 
   return (
     <Card className={`${classes.root} ${cardIndex === currentCard ? classes.selected : ''}`}>
