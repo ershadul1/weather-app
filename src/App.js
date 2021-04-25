@@ -5,7 +5,6 @@ import fetchWeatherData from './Redux/actions/actionCreators';
 import Loading from './components/Loading/Loading';
 import Error from './components/Error/Error';
 import WeatherInfo from './containers/WeatherInfo/WeatherInfo';
-import './App.css';
 
 const App = ({ loaded, error, fetchWeatherData }) => {
   useEffect(() => {
