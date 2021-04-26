@@ -11,6 +11,7 @@ const useStyles = makeStyles(() => ({
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
     margin: '7vh auto',
+    height: '20vh',
   },
   barcontainer: {
     width: '12.5%',
