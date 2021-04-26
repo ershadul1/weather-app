@@ -6,11 +6,9 @@ const parseData = (data) => {
     if (!store[date]) {
       store[date] = {
         temp: [list[i].main.temp],
-        humidity: [list[i].main.humidity],
       };
     } else {
       store[date].temp.push(list[i].main.temp);
-      store[date].humidity.push(list[i].main.humidity);
     }
   }
   return store;
@@ -24,13 +22,7 @@ const avgData = (store) => {
       temperature += element;
     });
     const avgTemp = temperature / store[key].temp.length;
-
-    let humidity = 0;
-    store[key].humidity.forEach((element) => {
-      humidity += element;
-    });
-    const avgHumidity = humidity / store[key].temp.length;
-    arr.push([key, Math.round(avgTemp), Math.round(avgHumidity)]);
+    arr.push([key, Math.round(avgTemp)]);
   });
   return arr;
 };
