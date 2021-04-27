@@ -10,14 +10,14 @@ const mockStore = configureMockStore(middlewares);
 test('Fetches data from API', () => {
   fetchMock.getOnce('', {
     body: { data: 'test' },
-    headers: { 'content-type': 'application/json' }
+    headers: { 'content-type': 'application/json' },
   });
 
   const expectedActions = [
-    { type: types.FETCH_DATA_SUCCESS, payload: { data: 'test' } }
+    { type: types.FETCH_DATA_SUCCESS, payload: { data: 'test' } },
   ];
 
-  const store  = mockStore({ weatherData: {} });
+  const store = mockStore({ weatherData: {} });
 
   return store.dispatch(fetchWeatherData()).then(() => {
     expect(store.getActions()).toEqual(expectedActions);
