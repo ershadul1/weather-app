@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import uuid from 'uuid/v4';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
@@ -30,7 +31,7 @@ export default function BarChart({ tempList, unit }) {
   return (
     <Container maxWidth="sm" className={classes.root}>
       {tempList.map((element) => (
-        <div key={element} className={classes.barcontainer}>
+        <div key={uuid()} className={classes.barcontainer}>
           <div className={classes.bar} style={{ height: `${(element - 243) / 4}vh` }} />
 
           <Typography variant="body2" className={classes.text}>
