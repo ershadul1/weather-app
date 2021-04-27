@@ -40,11 +40,13 @@ export default function RadioButtonsGroup({ unit, handleUnitChange }) {
           name="unit"
           value={unit}
           onChange={handleChange}
+          data-testid="unit-switch"
         >
           <FormControlLabel
             value="C"
             control={<Radio color="primary" />}
             label={<Typography variant="h6">Celcius</Typography>}
+            data-testid="switch-c"
           />
           <FormControlLabel
             value="F"
