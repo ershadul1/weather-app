@@ -32,7 +32,11 @@ export default function Arrows({
   return (
     <div className={classes.root}>
       <div>
-        <Button onClick={prev} className={`${currentCard === 0 ? classes.disabled : ''}`}>
+        <Button
+          onClick={prev}
+          className={`${currentCard === 0 ? classes.disabled : ''}`}
+          data-testid="left-arrow"
+        >
           <img
             src={LeftArrow}
             alt="left-arrow"
@@ -41,7 +45,11 @@ export default function Arrows({
         </Button>
       </div>
       <div>
-        <Button onClick={next} className={`${currentCard === totalCards - 1 ? classes.disabled : ''}`}>
+        <Button
+          onClick={next}
+          className={`${currentCard === totalCards - 1 ? classes.disabled : ''}`}
+          data-testid="right-arrow"
+        >
           <img
             src={RightArrow}
             alt="right-arrow"
