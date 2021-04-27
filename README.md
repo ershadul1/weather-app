@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Weather App
+An app that shows weather forecast for next five days.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+This app fetches 5 day weather forecast from open weather map API and displays them on 
+the screen. The temperature of a day is also shown in three hours interval in a bar chart.
+Users can browse through the five weather cards using arrows.
 
-In the project directory, you can run:
+## Features
 
-### `yarn start`
+- Switch unit between Celcius and Fahrenheit.
+- Select weather cards using arrows.
+- Bar chart of the temperatures throughout the day in three hours interval.
+- Weather card shows average temperature of the day and date.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Screenshot
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![](screenshot.png)
 
-### `yarn test`
+## Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- Redux
+- HTML/CSS
+- Javascript
+- Create React App
+- Open Weather Map API
+- Material UI
+- React Testing Library
+- etc
 
-### `yarn build`
+## Live Demo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Weather App](https://ershadul.me/weather-app/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## To run the app locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+1. An internet browser
+1. npm
+1. react
 
-### `yarn eject`
+   
+### Steps to follow
+1. Clone the repository to your local machine using `git clone https://github.com/ershadul1/weather-app.git`
+1. On your local machine, navigate to the folder using `cd weather-app` in your terminal.
+1. Run `npm install` for installing all the dependencies.
+1. Run `npm start` to run the app on your local webserver.
+1. Visit `http://localhost:3000/weather-app/` to play the game from your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Steps to test
+1. Clone the repository to your local machine using `git clone https://github.com/ershadul1/weather-app.git`
+1. On your local machine, navigate to the folder using `cd weather-app` in your terminal.
+1. Run `npm install` for installing all the dependencies.
+1. Run `npm test` to start the test suit.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contributions
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  There are two ways of contributing to this project:
 
-## Learn More
+1.  If you see something wrong or not working, please check [the issue tracker section](https://github.com/ershadul1/weather-app/issues), if that problem you met is not in already opened issues then open the issue by clicking on the `new issue` button.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2.  If you have a solution to that, and you are willing to work on it, follow the below steps to contribute:
+    1.  Fork this repository
+    1.  Clone it on your local computer by running `git clone https://github.com/ershadul1/weather-app.git` __Replace *ershadul1* with the username you use on github__
+    1.  Open the cloned repository which appears as a folder on your local computer with your favorite code editor
+    1.  Create a separate branch of the *main branch*,
+    1.  Write your codes that fix the issue you found
+    1.  Commit and push the branch you created
+    1.  Raise a pull request, comparing your new created branch with our original master branch [here](https://github.com/ershadul1/weather-app)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Author 
 
-### Code Splitting
+👤 **Ershadul Rayhan**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Github: [@ershadul1](https://github.com/ershadul1)
+- Twitter: [@ErshadulRayhan](https://twitter.com/ErshadulRayhan)
+- Linkedin: [ErshadulRayhan](https://www.linkedin.com/in/ershadulrayhan/)
+- Email:  ershadul.rayhan@gmail.com
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Show your support
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if you like this project!
