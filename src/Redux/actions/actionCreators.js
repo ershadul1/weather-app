@@ -6,7 +6,7 @@ const fetchWeatherData = () => (dispath) => {
     REACT_APP_API_URL,
   } = process.env;
 
-  fetch(`${REACT_APP_API_URL}?q=Munich,de&APPID=${REACT_APP_API_KEY}&cnt=40`)
+  return fetch(`${REACT_APP_API_URL}?q=Munich,de&APPID=${REACT_APP_API_KEY}&cnt=40`)
     .then((response) => response.json())
     .then((data) => {
       dispath({ type: actions.FETCH_DATA_SUCCESS, payload: data });
