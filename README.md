@@ -1,11 +1,9 @@
 # Weather App
-An app that shows weather forecast for next five days.
+An app that shows the weather forecast for the next five days.
 
 ## Project Description
 
-This app fetches 5 day weather forecast from open weather map API and displays them on 
-the screen. The temperature of a day is also shown in three hours interval in a bar chart.
-Users can browse through the five weather cards using arrows.
+This app fetches a 5-day weather forecast from the open weather map API and displays them on the screen. The temperature of a day is also shown in three hours intervals in a bar chart. Users can browse through the five weather cards using arrows. Each weather card contains the average temperature and date of that day.
 
 ## Features
 
