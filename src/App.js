@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import fetchWeatherData from './Redux/actions/actionCreators';
+import Loading from './components/Loading/Loading';
+import Error from './components/Error/Error';
+import WeatherInfo from './containers/WeatherInfo/WeatherInfo';
 
-function App() {
+const App = ({ loaded, error, fetchWeatherData }) => {
+  useEffect(() => {
+    fetchWeatherData();
+  }, []);
+
+  if (!loaded) {
+    return (<Loading />);
+  }
+
+  if (error) {
+    return (<Error />);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WeatherInfo />
     </div>
   );
-}
+};
 
-export default App;
+App.propTypes = {
+  loaded: PropTypes.bool.isRequired,
+  error: PropTypes.bool.isRequired,
+  fetchWeatherData: PropTypes.func.isRequired,
+};
+
+const mapStateToProps = (state) => ({
+  loaded: state.weatherData.loaded,
+  error: state.weatherData.error,
+});
+
+const mapDispatchToProps = { fetchWeatherData };
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
