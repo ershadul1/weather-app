@@ -50,8 +50,8 @@ This app fetches a 5-day weather forecast from the open weather map API and disp
 REACT_APP_API_URL='https://api.openweathermap.org/data/2.5/forecast'
 REACT_APP_API_KEY='{OPEN WEATHER MAP API KEY}'
 ```
-1. Run `npm start` to run the app on your local webserver.
-1. Visit `http://localhost:3000/weather-app/` to run the app on your browser.
+5. Run `npm start` to run the app on your local webserver.
+6. Visit `http://localhost:3000/weather-app/` to run the app on your browser.
 
 ### Steps to test
 1. Clone the repository to your local machine using `git clone https://github.com/ershadul1/weather-app.git`
