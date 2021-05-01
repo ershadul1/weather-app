@@ -44,8 +44,14 @@ This app fetches a 5-day weather forecast from the open weather map API and disp
 1. Clone the repository to your local machine using `git clone https://github.com/ershadul1/weather-app.git`
 1. On your local machine, navigate to the folder using `cd weather-app` in your terminal.
 1. Run `npm install` for installing all the dependencies.
+1. Create a new file named `.env` in the root directory and add the following lines.
+   Replace `{OPEN WEATHER MAP API KEY}` with an API KEY from - [OPEN WEATHER MAP](https://openweathermap.org/appid)
+```
+REACT_APP_API_URL='https://api.openweathermap.org/data/2.5/forecast'
+REACT_APP_API_KEY='{OPEN WEATHER MAP API KEY}'
+```
 1. Run `npm start` to run the app on your local webserver.
-1. Visit `http://localhost:3000/weather-app/` to play the game from your browser.
+1. Visit `http://localhost:3000/weather-app/` to run the app on your browser.
 
 ### Steps to test
 1. Clone the repository to your local machine using `git clone https://github.com/ershadul1/weather-app.git`
