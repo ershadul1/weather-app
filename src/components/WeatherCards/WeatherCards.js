@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import uuid from 'uuid/v4';
+import { v4 as uuidv4 } from 'uuid';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '../Card/Card';
 
@@ -32,7 +32,7 @@ export default function WeatherCards({ currentCard, dailyData, unit }) {
     <div className={classes.root}>
       {arr.map((element) => (
         <Card
-          key={uuid()}
+          key={uuidv4()}
           cardIndex={element}
           data={dailyData[element]}
           currentCard={currentCard}
